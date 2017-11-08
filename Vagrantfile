@@ -28,6 +28,8 @@ SCRIPT
 
 Vagrant.configure(2) do |config|
   config.vm.box = "boxcutter/ubuntu1604"
+  ## If you can not find box, then replace the box to 'ubuntu/xenial64'. Uncomment the following line.
+  #config.vm.box = "ubuntu/xenial64"
 
   config.vm.provider "virtualbox" do |vb|
   #   # Display the VirtualBox GUI when booting the machine
